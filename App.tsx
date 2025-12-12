@@ -244,7 +244,7 @@ export default function App() {
             </div>
 
             {/* Controls Section */}
-            <div className="shrink-0 pb-safe-bottom">
+            <div className="shrink-0 pb-8">
                 {!isOn ? (
                     <button 
                         onClick={handleTogglePower}

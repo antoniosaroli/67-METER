@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>6-7 Meter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Prevent scrolling completely */
+        overscroll-behavior: none; /* Prevent rubber-banding on mobile */
+        font-family: 'Chakra Petch', sans-serif;
+        background-color: #0f172a;
+        touch-action: none; /* Disable panning/zooming gestures */
+      }
+      
+      /* Enforce 100dvh if supported for better mobile browser support */
+      @supports (height: 100dvh) {
+        body {
+          height: 100dvh;
+        }
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+
+      .font-mono-tech {
+        font-family: 'Share Tech Mono', monospace;
+      }
+      /* Custom scrollbar for slider aesthetics */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background: #10b981;
+        cursor: pointer;
+        margin-top: -10px;
+        box-shadow: 0 0 10px #10b981;
+      }
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        background: #334155;
+        border-radius: 2px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
